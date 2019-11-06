@@ -1,0 +1,202 @@
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+html{
+	font-size: 16px;
+}
+
+body {
+	font-size: 1em;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;/*in directions*/
+	justify-content: center;/*in directions*/
+	align-items: center;/*in directions*/
+}
+
+.container{
+	display: flex;/*in directions*/
+	justify-content: center;/*in directions*/
+	align-items: center;/*in directions*/
+	flex-flow: row wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.94em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: 1.143em;
+	line-height: 21px;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+/*	height: 110px;*/
+	/*border-bottom: 3px solid #77a466; moved to header h1, but not confident!!!!!*/
+	margin: 0 auto;
+	display: flex;/*in directions*/
+	flex-direction: column;/*not explicitely in directions*/
+	justify-content: center;/*in directions*/
+	align-items: center;/*in directions*/
+	width: 90%;/*in css directions*/
+}
+
+header h1 {
+	/*float: left; removed based on feedback from 10/3*/
+	margin: 0;
+	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	/*float: right;removed based on feedback from 10/3*/
+	padding: 46px 0;
+}
+header nav ul {
+	/*margin: 0;
+	padding: 0;*/
+	list-style-type: none;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.143em;
+	padding: 10px 0;
+	text-align: center;
+	/*padding: 0 10px;
+	/*display: inline;*/
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 90%;/*in css directions*/
+	/*margin: 0 auto;*/
+	/*clear: both; removed based on 10/3 feedback*/
+	display: flex;/*in directions*/
+	flex-direction: column;
+	justify-content: center;/*in directions*/
+	align-items: flex-start;/*center;/*in directions*/
+	text-align: left;
+}
+
+
+.main-image {
+	height: auto;
+	/*float: left; removed based on 10/3 feedback*/
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	width: 100%;
+/*	float: left; removed based on 10/3 feedback*/
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+	width: 100%;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	height: auto;
+/*	float: left; removed based on 10/3 feedback*/
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 0;
+}
+
+/*.section-two {
+	border-top: : 1px solid #eee;
+	border-bottom: : 1px solid #eee;
+}*/
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	font-size: 1em;
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+	padding: 10px 0;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding: 10px 0;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	/*clear: both; removed based on 10/3 feedback*/
+	text-align: center;
+	display: flex;/*in directions*/
+	justify-content: center;/*in directions*/
+	align-items: center;/*in directions*/
+	width: 100%;/*in css directions*/
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.143em;
+}
